@@ -41,10 +41,10 @@ export const getClient = async () => {
             console.error('A client has been checked out for more than 5 seconds!');
         }, 5000);
 
-        // Monkey patch the release method to clear timeout
-        client.release = () => {
+        // Monkey patch the release method to clear timeout and forward arguments
+        client.release = (err?: boolean | Error) => {
             clearTimeout(timeout);
-            return release();
+            return release(err);
         };
 
         return client;

@@ -19,12 +19,12 @@ export async function GET(request: NextRequest) {
 
         const collegeId = decoded.collegeId;
 
-        // Get stats
+        // Get stats with cast to int
         const stats = await query(
             `SELECT
-        (SELECT COUNT(*) FROM clubs WHERE college_id = $1 AND status = 'approved') as approved_clubs,
-        (SELECT COUNT(*) FROM clubs WHERE college_id = $1 AND status = 'pending') as pending_clubs,
-        (SELECT views FROM analytics WHERE entity_type = 'college' AND entity_id = $1) as total_views`,
+        (SELECT COUNT(*) FROM clubs WHERE college_id = $1 AND status = 'approved')::int as approved_clubs,
+        (SELECT COUNT(*) FROM clubs WHERE college_id = $1 AND status = 'pending')::int as pending_clubs,
+        (SELECT COALESCE(views, 0) FROM analytics WHERE entity_type = 'college' AND entity_id = $1)::int as total_views`,
             [collegeId]
         );
 
@@ -41,7 +41,7 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({
             success: true,
             data: {
-                stats: stats.rows[0],
+                stats: stats.rows[0] || { approved_clubs: 0, pending_clubs: 0, total_views: 0 },
                 pendingClubs: pendingClubs.rows,
             },
         });

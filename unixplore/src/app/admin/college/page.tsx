@@ -221,7 +221,7 @@ export default function CollegeAdminPage() {
                                 </Button>
 
                                 <p className="text-sm text-center text-muted-foreground">
-                                    Don't have an account?{' '}
+                                    Don&apos;t have an account?{' '}
                                     <a href="/register/college" className="text-primary hover:underline">
                                         Register College
                                     </a>
@@ -358,7 +358,7 @@ export default function CollegeAdminPage() {
                                     <DialogContent>
                                         <DialogHeader>
                                             <DialogTitle>Edit College Details</DialogTitle>
-                                            <DialogDescription>Update your college's public information</DialogDescription>
+                                            <DialogDescription>Update your college&apos;s public information</DialogDescription>
                                         </DialogHeader>
                                         <form onSubmit={handleUpdateDetails} className="space-y-4 mt-4">
                                             <div>

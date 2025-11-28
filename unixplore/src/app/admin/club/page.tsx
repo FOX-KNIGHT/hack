@@ -258,7 +258,7 @@ export default function ClubAdminPage() {
                                 </Button>
 
                                 <p className="text-sm text-center text-muted-foreground">
-                                    Don't have an account?{' '}
+                                    Don&apos;t have an account?{' '}
                                     <a href="/register/club" className="text-primary hover:underline">
                                         Register Club
                                     </a>
@@ -300,7 +300,7 @@ export default function ClubAdminPage() {
                         <CardContent className="pt-6">
                             <p className="text-sm">
                                 <strong>Pending Approval:</strong> Your club registration is awaiting approval from your college admin.
-                                You'll be able to access all dashboard features once approved.
+                                You&apos;ll be able to access all dashboard features once approved.
                             </p>
                         </CardContent>
                     </Card>
@@ -372,7 +372,7 @@ export default function ClubAdminPage() {
                                         <DialogContent className="max-w-2xl">
                                             <DialogHeader>
                                                 <DialogTitle>Edit Club Details</DialogTitle>
-                                                <DialogDescription>Update your club's public information</DialogDescription>
+                                                <DialogDescription>Update your club&apos;s public information</DialogDescription>
                                             </DialogHeader>
                                             <form onSubmit={handleUpdateDetails} className="space-y-4 mt-4">
                                                 <div>

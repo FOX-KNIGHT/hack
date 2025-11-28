@@ -12,7 +12,7 @@ export default function ContactPage() {
             <div className="container-custom max-w-4xl">
                 <h1 className="text-4xl font-bold mb-4">Contact & Support</h1>
                 <p className="text-lg text-muted-foreground mb-12">
-                    Have questions or need help? We're here to assist you.
+                    Have questions or need help? We&apos;re here to assist you.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                         <div>
                             <h3 className="font-semibold mb-2">How do I register my college?</h3>
                             <p className="text-sm text-muted-foreground">
-                                Visit the College Registration page, fill in your college details, and you'll receive a unique College ID.
+                                Visit the College Registration page, fill in your college details, and you&apos;ll receive a unique College ID.
                                 You can then log in to your admin dashboard to manage your college information and approve club registrations.
                             </p>
                         </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                         <div>
                             <h3 className="font-semibold mb-2">How do I register my club?</h3>
                             <p className="text-sm text-muted-foreground">
-                                Visit the Club Registration page, enter your college's ID or name, fill in your club details, and submit.
+                                Visit the Club Registration page, enter your college&apos;s ID or name, fill in your club details, and submit.
                                 Your registration will be pending until your college admin approves it.
                             </p>
                         </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                             <h3 className="font-semibold mb-2">Do you use cookies or track users?</h3>
                             <p className="text-sm text-muted-foreground">
                                 No. UniXplore does not use cookies or tracking technologies for public users.
-                                We respect your privacy and don't collect any personal information from visitors.
+                                We respect your privacy and don&apos;t collect any personal information from visitors.
                             </p>
                         </div>
                     </CardContent>
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
                 <div className="mt-12 text-center">
                     <p className="text-muted-foreground">
-                        Can't find what you're looking for? Email us at{' '}
+                        Can&apos;t find what you&apos;re looking for? Email us at{' '}
                         <a href="mailto:support@unixplore.com" className="text-primary hover:underline">
                             support@unixplore.com
                         </a>
